@@ -1,0 +1,60 @@
+@use 'fonts';
+@use 'colors';
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    &__ul-links{
+        ul{
+            list-style-type: none;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            li{
+                font-family: fonts.$content;
+                margin: 0 25px;
+            }
+
+        }
+    }
+    &__ul-dots{
+        display:none;
+    }
+}/*END OF NAV LARGE*/
+
+
+
+@media screen and (max-width: 320px) {
+    .navbar{
+
+        &__ul-links{
+            display: none;
+        }
+        &__ul-dots{
+            display: flex;
+            align-items: flex-start;
+
+            ul{
+                list-style-type: none;
+                display:flex;
+                
+                li{
+                    font-family: fonts.$header;
+                    
+
+                }
+    
+            }
+
+            p{
+                font-size: 36px;
+                letter-spacing: -2px;
+            }
+        }
+
+    }
+    
+}

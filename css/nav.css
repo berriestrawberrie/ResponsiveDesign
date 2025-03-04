@@ -1,0 +1,59 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+.navbar__ul-links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar__ul-links ul li {
+  font-family: "Source Sans 3", serif;
+  margin: 0 25px;
+}
+.navbar__ul-dots {
+  display: none;
+}
+
+/*END OF NAV LARGE*/
+@media screen and (max-width: 320px) {
+  .navbar__ul-links {
+    display: none;
+  }
+  .navbar__ul-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbar__ul-dots ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__ul-dots ul li {
+    font-family: "Poppins", serif;
+  }
+  .navbar__ul-dots p {
+    font-size: 36px;
+    letter-spacing: -2px;
+  }
+}

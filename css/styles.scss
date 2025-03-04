@@ -1,0 +1,96 @@
+@use 'fonts';
+@use 'colors';
+
+@import 'main';
+
+*{
+    color: colors.$main-color;
+}
+
+body{
+    max-width: 1440px;
+    min-width: 320px;
+    position: relative;
+    background-color: colors.$bg-color;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: fonts.$header;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: -2px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+h3{
+    font-family: fonts.$logo;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -.25px;
+    font-weight: normal;
+}
+p{
+    font-family: fonts.$content;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: .5;
+}
+
+
+/*TABLET: 1440PX DESKTOP*/
+@media screen and (min-width: 769px){
+    body{
+        width: 85%;
+    }
+
+}
+
+
+/*TABLET: 768PX MEDIUM*/
+@media screen and (max-width: 768px){
+    body{
+     width: 85%;
+    }
+    h1{
+        font-family: fonts.$header;
+        font-size: 72px;
+        line-height: 83px;
+        letter-spacing: -1.6px;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+    
+    h3{
+
+        font-weight: bold;
+    }
+ }
+ 
+
+/*PHONE: 320PX SMALL*/
+
+@media screen and (max-width: 320px){
+    body{
+     width: 100%;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: -.8px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 12px;
+        line-height: 18px;
+
+    }
+     
+ }

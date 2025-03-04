@@ -1,0 +1,95 @@
+
+/*TABLET: 1440PX DESKTOP*/
+.main{
+    width: 100%;
+    height: 100%;
+    &__title{
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+    }
+    &__content{
+        margin: 0 auto;
+        text-align: center;
+        width: 60%;
+    }
+    &__image{
+        margin-top: 30px;
+        width: 100%;
+        height: 50vh;
+        background-image: url('../images/horse-lg.png');
+        background-size: cover;
+        background-position-x: 40%;
+    }
+
+}/*END OF 1440PX DESKTOP*/
+
+
+
+/*TABLET: 768PX MEDIUM*/
+@media screen and (max-width: 768px){
+
+    .main{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+ 
+
+        &__title{   
+            width: 100%;
+            grid-row:2/3;
+            grid-column: 1/11;
+
+        }
+        &__content{
+            width: 100%;
+            grid-row: 3/4;
+            grid-column: 1/11;
+            
+        }
+        &__image{
+            grid-row: 4/11;
+            grid-column: 1/11;
+
+        }
+
+    }
+}/*END OF TABLET: 768PX MEDIUM**/
+ 
+/*PHONE: 320px PHONE*/
+@media screen and (max-width: 320px){
+
+
+    .main{
+        margin-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+
+   
+
+        &__title{   
+            width: 100%;
+            grid-row:1/3;
+            grid-column: 1/6;
+
+        }
+        &__content{
+            width: 100%;
+            grid-row: 3/4;
+            grid-column: 1/6;
+
+            
+        }
+        &__image{
+            grid-row:4/11;
+            grid-column: 1/6;
+
+
+        }
+
+    }
+
+}/*END OF PHONE: 320px PHONE*/
